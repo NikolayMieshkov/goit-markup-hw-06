@@ -730,7 +730,13 @@ color: #fff;
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }  
+  .btn-footer-subscribe:hover,
+  .btn-footer-subscribe:focus,
+  .btn-footer-subscribe:active {
+    background-color: var(--pressed-state-color); 
+  }
   .icon-footer-send {
     fill: #fff;
     margin-left: 16px;
@@ -1170,32 +1176,51 @@ pointer-events: auto;
         gap: 48px 24px;    
     }
     .portfolio-item-card {
-        width: calc((100% - 24px *3)/ 4);
+        width: 360px;
+    }
+    .portfolio-cover-text {
+     
+    }
+    .portfolio-cover-wrap {
+    position: relative;
+    overflow: hidden;
     }
     .footer-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 159px;
+    
     }
     .footer-container {
         display: flex;
         flex-wrap: nowrap;
         align-items: baseline;
+        gap: 0;
     } 
+    .footer-text {
+    min-width: 264px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-align: left;
+    }
     .footer-bottom {
     margin-left: 80px;
     display: block;
     justify-content: space-between;
     align-items: center;
       }   
-      .footer-form {
+    .footer-input-label {
+        margin-right: 0;
+    }
+    .footer-form {
         display: flex;
         gap: 24px;
 }
 .footer-company {
     margin-right: 120px; 
-   width: 264px;
-
-
 }
 .hero-section {
     padding-top: 188px;
